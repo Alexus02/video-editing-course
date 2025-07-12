@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editing Mastery Course - Transform Your Skills</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 5px solid #4a2c82;
+        }
+        
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Price Tag */
+        .price-tag {
+            background-color: #ff5722;
+            color: white;
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .access-duration {
+            font-size: 1.1rem;
+            color: #e0e0e0;
+        }
+        
+        /* Content Layout */
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 3rem 0;
+        }
+        
+        .left-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .right-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        /* Video Section */
+        .video-section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* Course Details */
+        .course-details {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .course-details h2 {
+            color: #6e48aa;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        
+        .course-details h3 {
+            color: #9d50bb;
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .course-details ul {
+            list-style-type: none;
+            margin-bottom: 1.5rem;
+        }
+        
+        .course-details li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .course-details li:before {
+            content: "✓";
+            color: #6e48aa;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        /* Features Section */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .feature-card h3 {
+            color: #6e48aa;
+            margin-bottom: 0.8rem;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            padding: 3rem 0;
+            background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
+            color: white;
+        }
+        
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #ff5722;
+            color: white;
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button:hover {
+            background-color: #e64a19;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .content-wrapper {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Video Editing Mastery Course</h1>
+            <p>Transform from beginner to professional video editor with our comprehensive course covering all essential tools, techniques, and cutting-edge AI editing technologies.</p>
+            <div class="price-tag">Only $30</div>
+            <div class="access-duration">Full course access for 1 year</div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="left-column">
+                <section class="video-section">
+                    <h2>Course Preview</h2>
+                    <div class="video-wrapper">
+                        <iframe src="https://player.vimeo.com/video/1088068802?h=f330645b8e" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </section>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>Professional Software</h3>
+                        <p>Master Premiere Pro, Final Cut, DaVinci Resolve, and CapCut with expert guidance.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>AI Editing Tools</h3>
+                        <p>Learn to leverage cutting-edge AI for faster, smarter editing workflows.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Practical Projects</h3>
+                        <p>Build your portfolio with real-world projects and exercises.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Community Support</h3>
+                        <p>Join our active community of editors for feedback and collaboration.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right-column">
+                <div class="course-details">
+                    <h2>What You'll Learn</h2>
+                    
+                    <h3>Professional Editing Software</h3>
+                    <ul>
+                        <li>Adobe Premiere Pro - Industry standard editing</li>
+                        <li>Final Cut Pro - Apple's powerful NLE</li>
+                        <li>DaVinci Resolve - Professional color grading</li>
+                        <li>CapCut - Mobile and desktop editing</li>
+                    </ul>
+                    
+                    <h3>AI-Powered Editing Tools</h3>
+                    <ul>
+                        <li>Automated video editing with AI assistance</li>
+                        <li>AI-powered color correction and grading</li>
+                        <li>Smart object removal and background replacement</li>
+                        <li>AI-generated transitions and effects</li>
+                        <li>Voice synthesis for automated voiceovers</li>
+                    </ul>
+                    
+                    <h3>Essential Editing Skills</h3>
+                    <ul>
+                        <li>Professional cutting and trimming techniques</li>
+                        <li>Advanced transitions and effects</li>
+                        <li>Color correction and grading</li>
+                        <li>Audio editing and mixing</li>
+                        <li>Motion graphics and titles</li>
+                        <li>Optimizing videos for different platforms</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="cta-section">
+        <div class="container">
+            <h2>Start Your Video Editing Journey Today</h2>
+            <p>Join thousands of students who've transformed their skills with our comprehensive course.</p>
+            <a href="https://pay.digitstem.com.ng/CQDCTB9K7GTE/L1cvTEVpeU5MYUliUHJxQnpHYjVrZz09-MzEzMjQ1" class="cta-button">Enroll Now for $30</a>
+        </div>
+    </section>
+</body>
+</html>
